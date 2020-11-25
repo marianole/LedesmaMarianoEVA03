@@ -24,6 +24,5 @@ public class Evento {
 
 	public void sumarParticipantes(Integer numeroDeParticipacion, Deportista deportista){
 		participantes.put(numeroDeParticipacion,deportista);
-
 	}
 }
