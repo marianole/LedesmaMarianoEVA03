@@ -12,13 +12,18 @@ public class Evento {
 	private Integer numeroDeInscripcion;
 	private Map<Integer, Deportista> participantes;
 
-	public Evento(TipoDeEvento tipo, Integer numeroDeInscripcion, Map<Integer, Deportista> participantes) {
+	public Evento(TipoDeEvento tipo, Integer numeroDeInscripcion) {
 		this.tipo = tipo;
 		this.numeroDeInscripcion = numeroDeInscripcion;
-		this.participantes = participantes;
+		this.participantes = new HashMap<Integer, Deportista>();
 	}
 
 	public Evento(TipoDeEvento e){
 		this.tipo=e;
+	}
+
+	public void sumarParticipantes(Integer numeroDeParticipacion, Deportista deportista){
+		participantes.put(numeroDeParticipacion,deportista);
+
 	}
 }

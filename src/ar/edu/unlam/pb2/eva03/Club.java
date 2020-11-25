@@ -12,12 +12,14 @@ public class Club {
 	private String nombre;
 	private Set<Deportista> socios;
 	private Map<String, Evento> competencias;
+	private Map<Integer, Deportista> participantes;
+
 
 	public Club(String nombre){
 		this.nombre=nombre;
 		this.socios=new HashSet<Deportista>();
 		this.competencias= new HashMap<String, Evento>();
-
+		this.participantes= new HashMap<Integer, Deportista>();
 	}
 	public void agregarDeportista(Deportista deportista)  {
 		socios.add(deportista);
@@ -34,7 +36,6 @@ public class Club {
 	}
 
 	public Integer inscribirEnEvento(String nombreMaraton, Deportista deportista) {
-
 
 	}
 }
