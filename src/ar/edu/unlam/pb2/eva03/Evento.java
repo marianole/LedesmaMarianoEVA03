@@ -12,8 +12,13 @@ public class Evento {
 	private Integer numeroDeInscripcion;
 	private Map<Integer, Deportista> participantes;
 
-	public Evento(TipoDeEvento tipo, Integer numeroDeInscripcion) {
-		this.tipo=tipo;
-		this.numeroDeInscripcion=numeroDeInscripcion;
+	public Evento(TipoDeEvento tipo, Integer numeroDeInscripcion, Map<Integer, Deportista> participantes) {
+		this.tipo = tipo;
+		this.numeroDeInscripcion = numeroDeInscripcion;
+		this.participantes = participantes;
+	}
+
+	public Evento(TipoDeEvento e){
+		this.tipo=e;
 	}
 }

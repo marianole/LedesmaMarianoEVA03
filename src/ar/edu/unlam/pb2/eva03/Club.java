@@ -32,4 +32,9 @@ public class Club {
 		this.competencias.put(nombreEvento, new Evento(evento));
 
 	}
+
+	public Integer inscribirEnEvento(String nombreMaraton, Deportista deportista) {
+
+
+	}
 }
